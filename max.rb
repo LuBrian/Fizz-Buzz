@@ -1,6 +1,12 @@
 # Find the maximum 
 def maximum(arr)
-  arr.max
+  max=0
+  arr.each do | x |
+    if x > max
+      max = x
+    end
+  end
+  result = max    
 end
 
 # expect it to return 42 below
